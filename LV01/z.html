@@ -1,0 +1,68 @@
+
+<!DOCTYPE html>
+<html lang="bs">
+<head>
+    <meta charset="utf-8">
+    <title>Kreativna radionica za studente</title>
+</head>
+<body>
+    <h1>Kreativna radionica za studente</h1>
+
+    <h2>O radionici</h2>
+    <p>Radionica je namijenjena studentima koji žele razvijati
+    kreativnost i upoznati druge studente.</p>
+
+    <p>Učesnici će kroz praktične aktivnosti razmjenjivati ideje
+    i učiti jedni od drugih.</p>
+
+    <img src="slika.png" alt="Studenti koji zajedno rade na kreativnom projektu">
+
+    <h2>Informacije o događaju</h2>
+    <p>Radionica će se održati 15. novembra 2026. godine,
+    od 10:00 do 12:00 i od 13:00 do 15:00, u prostorijama Elektrotehničkog fakulteta
+    u Sarajevu.</p>
+
+    <p>Na radionici ćemo:</p>
+    <ul>
+        <li>učestvovati u kreativnim aktivnostima</li>
+        <li>razmjenjivati ideje</li>
+        <li>upoznati druge studente</li>
+    </ul>
+
+    <p>Informacije o fakultetu dostupne su na linku:
+    <a href="https://www.etf.unsa.ba/">Elektrotehnički fakultet</a>.</p>
+
+    <p>Za prijavu na radionicu javite se organizatoru putem
+    studentske službe fakulteta.</p>
+
+    <form>
+        <p>
+            <label for="ime">Ime i prezime:</label>
+            <input type="text" id="ime" name="ime">
+        </p>
+
+        <p>Da li ste ranije učestvovali na radionici?</p>
+
+        <input type="radio" id="da" name="iskustvo" value="da">
+        <label for="da">Da</label>
+
+        <input type="radio" id="ne" name="iskustvo" value="ne">
+        <label for="ne">Ne</label>
+
+        <p>
+            <input type="checkbox" id="obavijesti" name="obavijesti">
+            <label for="obavijesti">Želim primati obavijesti o budućim radionicama</label>
+        </p>
+
+        <p>
+            <label for="termin">Odaberite željeni termin:</label>
+            <select id="termin" name="termin">
+                <option value="jutro">Jutarnji</option>
+                <option value="poslijepodne">Poslijepodnevni</option>
+            </select>
+        </p>
+
+        <input type="submit" value="Prijavi se">
+    </form>
+</body>
+</html>

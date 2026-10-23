@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="bs">
+<head>
+    <meta charset="utf-8">
+    <title>Anketa o čitalačkim navikama</title>
+</head>
+<body>
+    <h1>Anketa o čitalačkim navikama</h1>
+
+    <p>Ova anketa prikuplja podatke o čitalačkim navikama.</p>
+
+    <form>
+        <p>
+            <label for="ime">Ime i prezime:</label>
+            <input type="text" id="ime" name="ime">
+        </p>
+
+        <p>
+            <label for="dob">Dobna grupa:</label>
+            <select id="dob" name="dob">
+                <option value="ispod18">Manje od 18 godina</option>
+                <option value="18-25">18–25 godina</option>
+                <option value="26-40">26–40 godina</option>
+                <option value="iznad40">Više od 40 godina</option>
+            </select>
+        </p>
+
+        <p>Koji format knjige preferirate?</p>
+
+        <input type="radio" id="stampana" name="format" value="stampana">
+        <label for="stampana">Štampana knjiga</label>
+
+        <input type="radio" id="elektronska" name="format" value="elektronska">
+        <label for="elektronska">Elektronska knjiga</label>
+
+        <input type="radio" id="audio" name="format" value="audio">
+        <label for="audio">Audioknjiga</label>
+
+        <p>Koje žanrove volite čitati? Moguće je odabrati više odgovora.</p>
+
+        <input type="checkbox" id="fantastika" name="zanr" value="fantastika">
+        <label for="fantastika">Fantastika</label>
+
+        <input type="checkbox" id="krimi" name="zanr" value="krimi">
+        <label for="krimi">Krimići</label>
+
+        <input type="checkbox" id="horor" name="zanr" value="horor">
+        <label for="horor">Horor</label>
+
+        <input type="checkbox" id="romansa" name="zanr" value="romansa">
+        <label for="romansa">Romansa</label>
+
+        <p>
+            <label for="komentar">Dodatni komentar:</label>
+            <input type="text" id="komentar" name="komentar">
+        </p>
+    </form>
+
+    </body>
+</html>
