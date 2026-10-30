@@ -1,0 +1,82 @@
+
+<!DOCTYPE html>
+<html lang="bs">
+<head>
+    <meta charset="UTF-8">
+    <title>Zadatak 5</title>
+    <style>
+        body {
+            background-color: yellow;
+            font-family: "Times New Roman";
+            margin: 8px;
+        }
+
+        #naslov {
+            text-align: center;
+            margin: 5px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            border: 1px solid black;
+            padding: 5px;
+        }
+
+        th {
+            background-color: gray;
+            text-align: center;
+        }
+
+        td {
+            text-align: center;
+        }
+
+        .predmet {
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="naslov">Bodovanje po predmetima</div>
+
+    <table>
+        <tr>
+            <th width="24%"></th>
+            <th width="20%">Ispiti</th>
+            <th width="26%">Zadaće</th>
+            <th width="30%">Prisustvo</th>
+        </tr>
+
+        <tr>
+            <td class="predmet">PNWT</td>
+            <td>20</td>
+            <td>10</td>
+            <td>10</td>
+        </tr>
+
+        <tr>
+            <td class="predmet">MMS</td>
+            <td>20</td>
+            <td colspan="2">30</td>
+        </tr>
+
+        <tr>
+            <td class="predmet" rowspan="2">SI</td>
+            <td>20/2</td>
+            <td>10</td>
+            <td>10</td>
+        </tr>
+
+        <tr>
+            <td>20</td>
+            <td colspan="2">?</td>
+        </tr>
+    </table>
+
+</body>
+</html>

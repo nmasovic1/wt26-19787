@@ -1,0 +1,33 @@
+
+body {
+    font-family: Arial;
+    background-color: #f4f4f4;
+    margin: 30px;
+}
+
+#glavniNaslov {
+    text-align: center;
+    color: #333;
+    font-size: 32px;
+}
+
+.ponuda {
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border: 2px solid #aaa;
+    font-family: Arial;
+}
+
+.ponuda h2 {
+    color: #333;
+}
+
+.preporucena {
+    background-color: #e0ffe0;
+    border: 3px solid green;
+}
+
+.oznaka {
+    color: green;
+}
