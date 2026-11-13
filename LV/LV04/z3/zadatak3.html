@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="bs">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Evidencija trajanja</title>
+    <style>
+        table { border-collapse: collapse; }
+        th, td { border: 1px solid #777; padding: 6px 12px; }
+        #greska { color: #a12634; }
+    </style>
+</head>
+<body>
+    <h1>Evidencija trajanja učenja</h1>
+
+    <form id="unos" onsubmit="return dodajStavku()">
+        <p>
+            <label for="naziv">Naziv aktivnosti</label>
+            <input id="naziv" name="naziv" type="text">
+        </p>
+
+        <p>
+            <label for="iznos">Trajanje u minutama</label>
+            <input id="iznos" name="iznos" type="text">
+        </p>
+
+        <button type="submit">Dodaj</button>
+        <p id="greska"></p>
+    </form>
+
+    <p>Broj stavki: <span id="brojStavki"></span></p>
+
+    <table>
+        <thead>
+            <tr><th scope="col">Aktivnost</th><th scope="col">Minute</th></tr>
+        </thead>
+        <tbody id="stavke">
+            <tr><td>Čitanje postavke</td><td>10</td></tr>
+            <tr><td>Pisanje koda</td><td>30</td></tr>
+            <tr><td>Provjera rješenja</td><td>15</td></tr>
+        </tbody>
+        <tfoot>
+            <tr><th scope="row">Ukupno</th><td id="zbir"></td></tr>
+        </tfoot>
+    </table>
+
+    <script src="zadatak3.js"></script>
+</body>
+</html>

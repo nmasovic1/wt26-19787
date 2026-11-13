@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="bs">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Stablo predmeta</title>
+    <style>
+        .godina { margin-bottom: 10px; }
+        .predmeti { margin-left: 24px; }
+    </style>
+</head>
+<body>
+    <h1>Stablo predmeta</h1>
+
+    <div class="godina">
+        <button type="button" onclick="promijeniGranu(this, 'prva')">
+            <span>+</span> Prva godina
+        </button>
+
+        <div id="prva" class="predmeti" style="display: none;">
+            <div>- IM1</div>
+            <div>- IM2</div>
+            <div>- OE</div>
+            <div>- EES</div>
+        </div>
+    </div>
+
+    <div class="godina">
+        <button type="button" onclick="promijeniGranu(this, 'druga')">
+            <span>+</span> Druga godina
+        </button>
+
+        <div id="druga" class="predmeti" style="display: none;">
+            <div>- Tehnike programiranja</div>
+            <div>- Baze podataka</div>
+            <div>- Osnove računarskih mreža</div>
+        </div>
+    </div>
+
+    <script src="zadatak4.js"></script>
+</body>
+</html>

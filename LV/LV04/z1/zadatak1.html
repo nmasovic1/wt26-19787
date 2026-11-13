@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="bs">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Kontrolna lista</title>
+    <style>
+        li {
+            margin-bottom: 8px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Priprema za laboratorijsku vježbu</h1>
+    <p id="sazetak"></p>
+
+    <ul>
+        <li>
+            <button type="button" onclick="promijeni(this)">Pročitati postavku</button>
+            <span class="stanje">Nezavršeno</span>
+        </li>
+        <li>
+            <button type="button" onclick="promijeni(this)">Pregledati primjere</button>
+            <span class="stanje">Nezavršeno</span>
+        </li>
+        <li>
+            <button type="button" onclick="promijeni(this)">Pripremiti HTML</button>
+            <span class="stanje">Nezavršeno</span>
+        </li>
+        <li>
+            <button type="button" onclick="promijeni(this)">Napisati JavaScript</button>
+            <span class="stanje">Nezavršeno</span>
+        </li>
+        <li>
+            <button type="button" onclick="promijeni(this)">Isprobati rješenje</button>
+            <span class="stanje">Nezavršeno</span>
+        </li>
+    </ul>
+
+    <button type="button" onclick="vratiSve()">Vrati sve na početno stanje</button>
+
+    <script src="zadatak1.js"></script>
+</body>
+</html>

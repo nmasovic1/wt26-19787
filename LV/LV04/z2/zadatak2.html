@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="bs">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Pregled obavijesti</title>
+    <style>
+        #greska { color: #a12634; }
+        #pregled { padding: 12px; border: 1px solid #777; }
+        #pregledTeksta { white-space: pre-wrap; }
+        #oznaka { font-weight: bold; }
+    </style>
+</head>
+<body>
+    <h1>Kratka obavijest</h1>
+
+    <form id="obavijest" onsubmit="return prikaziPregled()">
+        <p>
+            <label for="naslov">Naslov</label><br>
+            <input id="naslov" name="naslov" type="text">
+        </p>
+
+        <p>
+            <label for="tekst">Tekst obavijesti</label><br>
+            <textarea id="tekst" name="tekst" rows="4" cols="30"></textarea>
+        </p>
+
+        <p>
+            <label for="kategorija">Kategorija</label><br>
+            <select id="kategorija" name="kategorija">
+                <option>Informacija</option>
+                <option>Važno</option>
+            </select>
+        </p>
+
+        <button type="submit">Prikaži pregled</button>
+        <button type="reset" onclick="ocistiPregled()">Vrati na početno stanje</button>
+        <p id="greska"></p>
+    </form>
+
+    <h2>Pregled</h2>
+    <div id="pregled">
+        <h3 id="pregledNaslova">Nema obavijesti</h3>
+        <p id="pregledTeksta"></p>
+        <p id="oznaka"></p>
+    </div>
+
+    <script src="zadatak2.js"></script>
+</body>
+</html>

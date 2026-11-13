@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="bs">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Zapremina kugle</title>
+</head>
+<body>
+    <h1>Zapremina kugle</h1>
+
+    <form id="kugla" onsubmit="return izracunaj()">
+        <p>
+            <label for="poluprecnik">Poluprečnik</label><br>
+            <input type="text" id="poluprecnik" name="poluprecnik">
+        </p>
+
+        <p>
+            <label for="zapremina">Zapremina</label><br>
+            <input type="text" id="zapremina" name="zapremina" value="0.0000" readonly>
+        </p>
+
+        <button type="submit">Izračunaj</button>
+        <p id="greska"></p>
+    </form>
+
+    <script src="zadatak5.js"></script>
+</body>
+</html>
